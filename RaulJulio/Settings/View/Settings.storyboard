@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ntd-OD-OTn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ajustes-->
+        <scene sceneID="EJH-r8-gcL">
+            <objects>
+                <viewController id="Ntd-OD-OTn" customClass="SettingsViewController" customModule="RaulJulio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y9W-cd-0IX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-nw-vbg">
+                                <rect key="frame" x="16" y="60" width="382" height="34"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-PZ-yj6">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotação do dólar (R$):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIc-DW-sto">
+                                                <rect key="frame" x="0.0" y="0.0" width="266.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zZn-MG-HT7">
+                                                <rect key="frame" x="276.5" y="0.0" width="105.5" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofH-US-mV3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campo obrigatório" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlW-SK-hX6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mvo-Jb-Dvu">
+                                <rect key="frame" x="16" y="110" width="382" height="34"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="92i-If-2QF">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOF (%):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Q-eT-qgd">
+                                                <rect key="frame" x="0.0" y="0.0" width="266.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K5I-D9-4wI">
+                                                <rect key="frame" x="276.5" y="0.0" width="105.5" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAT-mG-2zx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campo obrigatório" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHB-BP-OUK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impostos por estado (USA)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-vr-xLW">
+                                <rect key="frame" x="99.5" y="168" width="215.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Lf-tIG">
+                                <rect key="frame" x="0.0" y="212.5" width="414" height="544.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ntd-OD-OTn" id="Hw6-6t-BBi"/>
+                                    <outlet property="delegate" destination="Ntd-OD-OTn" id="eEQ-fh-ZU0"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0q-MA-zwB">
+                                <rect key="frame" x="223" y="781" width="175" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adicionar estado (USA)"/>
+                                <connections>
+                                    <action selector="didTapAddStateButton:" destination="Ntd-OD-OTn" eventType="touchUpInside" id="3nZ-rb-IcF"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista de estados vazia." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMQ-Fg-rRR">
+                                <rect key="frame" x="125" y="438.5" width="164.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="onb-Qo-DOS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="onb-Qo-DOS" firstAttribute="trailing" secondItem="mvo-Jb-Dvu" secondAttribute="trailing" constant="16" id="1bc-uA-eib"/>
+                            <constraint firstItem="cMQ-Fg-rRR" firstAttribute="centerX" secondItem="y9W-cd-0IX" secondAttribute="centerX" id="CM1-Ek-Ell"/>
+                            <constraint firstItem="vRx-Lf-tIG" firstAttribute="top" secondItem="wcN-vr-xLW" secondAttribute="bottom" constant="24" id="IHK-MP-j45"/>
+                            <constraint firstItem="wcN-vr-xLW" firstAttribute="centerX" secondItem="y9W-cd-0IX" secondAttribute="centerX" id="M8m-4C-gcw"/>
+                            <constraint firstItem="1xe-nw-vbg" firstAttribute="top" secondItem="onb-Qo-DOS" secondAttribute="top" constant="16" id="OBo-4h-IOl"/>
+                            <constraint firstItem="1xe-nw-vbg" firstAttribute="leading" secondItem="onb-Qo-DOS" secondAttribute="leading" constant="16" id="ORs-RU-5M1"/>
+                            <constraint firstItem="onb-Qo-DOS" firstAttribute="trailing" secondItem="vRx-Lf-tIG" secondAttribute="trailing" id="PHC-Ug-hPe"/>
+                            <constraint firstItem="mvo-Jb-Dvu" firstAttribute="leading" secondItem="onb-Qo-DOS" secondAttribute="leading" constant="16" id="QQp-BD-o9t"/>
+                            <constraint firstItem="F0q-MA-zwB" firstAttribute="top" secondItem="vRx-Lf-tIG" secondAttribute="bottom" constant="24" id="THy-eX-T3L"/>
+                            <constraint firstItem="onb-Qo-DOS" firstAttribute="bottom" secondItem="F0q-MA-zwB" secondAttribute="bottom" constant="50" id="aMB-T4-12x"/>
+                            <constraint firstItem="vRx-Lf-tIG" firstAttribute="leading" secondItem="onb-Qo-DOS" secondAttribute="leading" id="gld-zH-csE"/>
+                            <constraint firstItem="onb-Qo-DOS" firstAttribute="trailing" secondItem="1xe-nw-vbg" secondAttribute="trailing" constant="16" id="icn-p2-uEL"/>
+                            <constraint firstItem="mvo-Jb-Dvu" firstAttribute="top" secondItem="1xe-nw-vbg" secondAttribute="bottom" constant="16" id="oeI-FV-cMe"/>
+                            <constraint firstItem="onb-Qo-DOS" firstAttribute="trailing" secondItem="F0q-MA-zwB" secondAttribute="trailing" constant="16" id="pBB-2U-r4k"/>
+                            <constraint firstItem="cMQ-Fg-rRR" firstAttribute="centerY" secondItem="y9W-cd-0IX" secondAttribute="centerY" id="sU1-S6-baZ"/>
+                            <constraint firstItem="wcN-vr-xLW" firstAttribute="top" secondItem="mvo-Jb-Dvu" secondAttribute="bottom" constant="24" id="uRu-Cn-uvu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="gearshape.2.fill" catalog="system" id="VGB-zG-qYH"/>
+                    <connections>
+                        <outlet property="dolarTextField" destination="ofH-US-mV3" id="4bs-dN-ekU"/>
+                        <outlet property="iofTextValue" destination="dAT-mG-2zx" id="APz-Lc-Biu"/>
+                        <outlet property="tableView" destination="vRx-Lf-tIG" id="ctA-gM-yJi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmt-Ob-BZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2851" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

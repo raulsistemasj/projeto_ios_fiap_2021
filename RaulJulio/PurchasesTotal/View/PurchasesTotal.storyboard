@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m9e-mi-zqB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Total de Compras-->
+        <scene sceneID="sXP-JX-Er9">
+            <objects>
+                <viewController id="m9e-mi-zqB" customClass="PurchasesTotalViewController" customModule="RaulJulio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="txh-8S-NvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em U$:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCO-xJ-1y3">
+                                <rect key="frame" x="159" y="92" width="96.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sF-RT-KEg">
+                                <rect key="frame" x="196.5" y="136.5" width="21" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em R$:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-JR-tth">
+                                <rect key="frame" x="159.5" y="207" width="95" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVw-nh-UVz">
+                                <rect key="frame" x="196.5" y="259.5" width="21" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pir-Ei-JiW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WVw-nh-UVz" firstAttribute="centerX" secondItem="o6R-JR-tth" secondAttribute="centerX" id="AFb-D1-tiX"/>
+                            <constraint firstItem="o6R-JR-tth" firstAttribute="centerX" secondItem="5sF-RT-KEg" secondAttribute="centerX" id="ALL-Cy-7y2"/>
+                            <constraint firstItem="WVw-nh-UVz" firstAttribute="top" secondItem="o6R-JR-tth" secondAttribute="bottom" constant="32" id="HZn-ms-zm0"/>
+                            <constraint firstItem="o6R-JR-tth" firstAttribute="top" secondItem="5sF-RT-KEg" secondAttribute="bottom" constant="32" id="JgF-bY-ctF"/>
+                            <constraint firstItem="uCO-xJ-1y3" firstAttribute="top" secondItem="pir-Ei-JiW" secondAttribute="top" constant="48" id="Qrl-IB-5LH"/>
+                            <constraint firstItem="5sF-RT-KEg" firstAttribute="top" secondItem="uCO-xJ-1y3" secondAttribute="bottom" constant="24" id="cs9-MG-XnE"/>
+                            <constraint firstItem="uCO-xJ-1y3" firstAttribute="centerX" secondItem="txh-8S-NvZ" secondAttribute="centerX" id="oxz-he-din"/>
+                            <constraint firstItem="5sF-RT-KEg" firstAttribute="centerX" secondItem="uCO-xJ-1y3" secondAttribute="centerX" id="y4q-u9-MUw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Total de Compras" image="dollarsign.circle" catalog="system" id="2Dt-ZU-cMa"/>
+                    <connections>
+                        <outlet property="dolarValueLabel" destination="5sF-RT-KEg" id="BI6-rE-tFW"/>
+                        <outlet property="realValueLabel" destination="WVw-nh-UVz" id="jeb-cf-23Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Po3-AC-fdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3671" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

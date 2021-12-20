@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EsV-bX-TI0">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cadastrar Produto-->
+        <scene sceneID="1Ai-CY-naC">
+            <objects>
+                <viewController id="EsV-bX-TI0" customClass="FormViewController" customModule="RaulJulio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Yi-hg-vpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6tF-ET-fza">
+                                <rect key="frame" x="8" y="15" width="398" height="327"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Produto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iY-Gb-LtJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="yDf-2T-5ze"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noProductImage" translatesAutoresizingMaskIntoConstraints="NO" id="J6H-6W-Kz3">
+                                        <rect key="frame" x="0.0" y="46" width="398" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="dTf-71-WgP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SqJ-zL-gpn">
+                                        <rect key="frame" x="0.0" y="198" width="398" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado US da comprou do produto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oyK-B2-1Qq">
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhJ-BE-rjH">
+                                                <rect key="frame" x="354" y="0.0" width="44" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="fFM-dH-UgG"/>
+                                                </constraints>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <segue destination="RJG-fp-lns" kind="push" id="lZJ-iD-1en"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="san-vo-p68"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="49F-3a-34b">
+                                        <rect key="frame" x="0.0" y="244" width="398" height="31"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor (U$)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYA-5V-o8j">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cartão?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-wx-CFr" userLabel="isCard">
+                                                <rect key="frame" x="272" y="0.0" width="65" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="lNt-5r-Y41"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-dy-g7Q">
+                                                <rect key="frame" x="349" y="0.0" width="51" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="49" id="fHK-OE-mco"/>
+                                                </constraints>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="eLT-kM-0uJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48h-tQ-27f">
+                                        <rect key="frame" x="0.0" y="287" width="398" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Sp-lf-OWU"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cadastrar">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="confirmAction:" destination="EsV-bX-TI0" eventType="touchUpInside" id="dd9-l9-Pet"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5iU-6Q-4Ja"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6tF-ET-fza" secondAttribute="trailing" constant="8" id="R1H-hB-pAw"/>
+                            <constraint firstItem="6tF-ET-fza" firstAttribute="leading" secondItem="4Yi-hg-vpZ" secondAttribute="leading" constant="8" id="ZFR-dj-kaj"/>
+                            <constraint firstItem="6tF-ET-fza" firstAttribute="top" secondItem="5iU-6Q-4Ja" secondAttribute="top" constant="15" id="zMR-W4-Eeb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cadastrar Produto" id="ug8-Tb-jj8"/>
+                    <connections>
+                        <outlet property="isCardSwitch" destination="bhr-dy-g7Q" id="7Yi-9i-LNC"/>
+                        <outlet property="nameTextField" destination="8iY-Gb-LtJ" id="X29-NZ-Ecb"/>
+                        <outlet property="productImage" destination="J6H-6W-Kz3" id="U56-hI-keE"/>
+                        <outlet property="stateTextField" destination="oyK-B2-1Qq" id="4hM-GS-xLw"/>
+                        <outlet property="valueTextField" destination="oYA-5V-o8j" id="Q2j-KR-lEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDV-nW-rFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3671" y="931"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="9jC-fj-yQ6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="RJG-fp-lns" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="P0p-Iv-1a3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fp3-HJ-hrt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2923" y="883"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noProductImage" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

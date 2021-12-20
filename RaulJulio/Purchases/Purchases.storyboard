@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDy-rs-DyQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lista de Compras-->
+        <scene sceneID="Ymm-Ak-2sz">
+            <objects>
+                <viewController storyboardIdentifier="PurchasesViewController" id="DVI-cU-Z5M" customClass="PurchasesViewController" customModule="RaulJulio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XS0-xt-2B1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sua lista está vazia!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBJ-eZ-7HW">
+                                <rect key="frame" x="132.5" y="437.5" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6gm-DZ-Th7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hk1-Mg-bSJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6gm-DZ-Th7" firstAttribute="leading" secondItem="Hk1-Mg-bSJ" secondAttribute="leading" id="Ewg-LV-l4M"/>
+                            <constraint firstItem="Hk1-Mg-bSJ" firstAttribute="bottom" secondItem="6gm-DZ-Th7" secondAttribute="bottom" id="TaU-lt-cnK"/>
+                            <constraint firstItem="6gm-DZ-Th7" firstAttribute="top" secondItem="Hk1-Mg-bSJ" secondAttribute="top" id="his-7R-M3M"/>
+                            <constraint firstItem="Hk1-Mg-bSJ" firstAttribute="trailing" secondItem="6gm-DZ-Th7" secondAttribute="trailing" id="lzV-Aw-2sR"/>
+                            <constraint firstItem="QBJ-eZ-7HW" firstAttribute="centerX" secondItem="XS0-xt-2B1" secondAttribute="centerX" id="xq1-Pp-CKa"/>
+                            <constraint firstItem="QBJ-eZ-7HW" firstAttribute="centerY" secondItem="XS0-xt-2B1" secondAttribute="centerY" id="zdR-es-Xwi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lista de Compras" id="Zyg-RW-f8j">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3yA-PR-u3C">
+                            <connections>
+                                <segue destination="yKt-v8-HYa" kind="push" identifier="goToPurchaseForm" id="gcb-7Q-a6E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="6gm-DZ-Th7" id="yU2-B2-EBY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zh-1e-ltb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3686.9565217391305" y="911.38392857142856"/>
+        </scene>
+        <!--Form-->
+        <scene sceneID="PMu-0M-lec">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Form" id="yKt-v8-HYa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g3P-H6-msc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLi-NI-GoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2760.8695652173915" y="930.80357142857133"/>
+        </scene>
+        <!--Compras-->
+        <scene sceneID="KC3-ib-A5u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDy-rs-DyQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compras" image="latch.2.case.fill" catalog="system" id="HQs-bu-IP1"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uOS-He-07b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DVI-cU-Z5M" kind="relationship" relationship="rootViewController" id="FGw-Cd-S0g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T64-Lc-2bT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4597.1014492753629" y="911.38392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="latch.2.case.fill" catalog="system" width="128" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
